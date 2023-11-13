@@ -27,8 +27,13 @@ int BinarySearch(int arr[] , int size , int key){
     
 }
 int main(){
-    int evenarray[5]={3,5,9,13,24};
+    int evenarray[6]={3,5,9,13,24};
+    int oddarray[5]={13,15,19,20,25};
     int key = 11;
-    int result = BinarySearch(evenarray,5 , key);
-    cout << result ;
+    int result = BinarySearch(evenarray,6 , key);
+    int result1 = BinarySearch(oddarray,5 , key);
+
+    cout << "For Even Array : "<<result << endl ;
+    cout << "For Odd Array : "<<result1 ;
+
 }
